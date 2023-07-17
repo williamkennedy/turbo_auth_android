@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Turbo Native Auth</string>
+    <string name="turbo_auth_error_message">Not logged in</string>
+</resources>

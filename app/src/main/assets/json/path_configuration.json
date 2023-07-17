@@ -1,0 +1,38 @@
+{
+  "settings": {
+    "screenshot_enabled": true
+  },
+  "rules": [
+    {
+      "patterns": [
+        ".*"
+      ],
+      "properties": {
+        "context": "default",
+        "uri": "turbo://fragment/web",
+        "pull_refresh_enabled": true
+      }
+    },
+    {
+      "patterns": [
+        "/new$",
+        "/edit$"
+      ],
+      "properties": {
+        "context": "modal",
+        "uri": "turbo://fragment/web/modal/sheet",
+        "pull_to_refresh_enabled": false
+      }
+    },
+    {
+      "patterns": [
+        "/sign_in$"
+      ],
+      "properties": {
+        "context": "default",
+        "uri": "turbo://fragment/sign_in",
+        "pull_refresh_enabled": false
+      }
+    }
+  ]
+}
